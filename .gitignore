@@ -5,3 +5,5 @@ DerivedData/
 build/
 ship.toml
 SPEC.md
+xcuserdata/
+*.xcuserstate

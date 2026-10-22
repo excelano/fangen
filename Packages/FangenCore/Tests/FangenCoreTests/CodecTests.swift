@@ -131,4 +131,12 @@ import Testing
         #expect(throws: DecodeError.badLink) { try Token(link: token.link + "=") }
         #expect(throws: DecodeError.badLink) { try Token(link: "https://example.com/t/abc") }
     }
+
+    @Test func fangenLinkRoutesByPrefix() throws {
+        var table = try Table(players: 3)
+        let token = try table.eliminate(0)
+        #expect(try FangenLink(table.payloads[1].link) == .join(table.payloads[1]))
+        #expect(try FangenLink(token.link) == .token(token))
+        #expect(throws: DecodeError.badLink) { try FangenLink("fangen://x/abc") }
+    }
 }

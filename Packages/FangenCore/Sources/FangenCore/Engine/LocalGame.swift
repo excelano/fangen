@@ -32,8 +32,10 @@ public enum EliminateError: Error, Equatable, Sendable {
     case timeUp
 }
 
-public struct LocalGame: Codable, Equatable, Sendable {
+public struct LocalGame: Codable, Equatable, Identifiable, Sendable {
     public static let scanGracePeriod: TimeInterval = 48 * 60 * 60
+
+    public var id: Data { gameID }
 
     public let gameID: Data
     public let title: String
