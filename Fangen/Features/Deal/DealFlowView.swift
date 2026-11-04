@@ -111,7 +111,7 @@ private struct DealDoneView: View {
                 .foregroundStyle(.tint)
             Text("Dealt!")
                 .font(.largeTitle.bold())
-            Text("This phone has forgotten the deal.")
+            Text("This device has forgotten the deal.")
                 .foregroundStyle(.secondary)
             Spacer()
             Button(organizerPayload == nil ? "Done" : "Go to my game") { onDone(organizerPayload) }

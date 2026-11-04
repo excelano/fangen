@@ -11,12 +11,12 @@ struct AboutView: View {
     var body: some View {
         List {
             Section {
-                Text("No accounts. No ads. No tracking. Nothing leaves your phone.")
+                Text("No accounts. No ads. No tracking. Nothing leaves your device.")
                     .font(.headline)
             }
             Section("Privacy") {
-                Text("Fangen has no server and makes no network connections. Games, names and keys stay on this phone, and the camera is used only to scan game codes.")
-                Text("Deleting the app deletes your games. Restoring a phone from a backup doesn't bring active games back.")
+                Text("Fangen has no server and makes no network connections. Games, names and keys stay on this device, and the camera is used only to scan game codes.")
+                Text("Deleting the app deletes your games. Restoring a device from a backup doesn't bring active games back.")
             }
             Section {
                 LabeledContent("Version", value: version)

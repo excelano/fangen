@@ -69,7 +69,7 @@ struct RootView: View {
             message = String(localized: "You've already joined this game.")
             path = [payload.gameID]
         case .otherPlayerOnPhone:
-            message = String(localized: "This phone already has a player in this game.")
+            message = String(localized: "This device already has a player in this game.")
         }
     }
 
@@ -79,7 +79,7 @@ struct RootView: View {
             try store.join(payload)
             path = [payload.gameID]
         } catch {
-            message = String(localized: "Fangen couldn't save this game on your phone. Try scanning the code again.")
+            message = String(localized: "Fangen couldn't save this game on this device. Try scanning the code again.")
         }
     }
 }
