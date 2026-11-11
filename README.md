@@ -10,7 +10,7 @@ There is no server, no account and no network connection. Everything travels bet
 
 The game is built to keep phones out of school. Catches happen in person and codes are scanned later, after school or on the weekend, and the app sends no notifications. The rules it shows every player steer play away from schools, homes, cars and workplaces.
 
-Nothing leaves the phone. The camera, used only to scan codes, is the single permission the app asks for.
+Nothing leaves the phone. The camera, used only to scan codes, is the single permission the app asks for. [SECURITY.md](SECURITY.md) says what the app stores and how to report a vulnerability.
 
 ## Building
 
@@ -22,4 +22,4 @@ The mission library is `Fangen/Resources/missions.json`. A test in `FangenCore` 
 
 ## License
 
-MIT. See [LICENSE](LICENSE). To report a security problem, see [SECURITY.md](SECURITY.md).
+MIT. See [LICENSE](LICENSE).
